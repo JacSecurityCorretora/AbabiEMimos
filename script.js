@@ -2,14 +2,18 @@
    ABABI & MIMOS — CONFIGURAÇÃO + INTERAÇÕES
    ========================================= */
 
+// CONFIGURAÇÕES GERAIS
 const CONFIG = {
   whatsapp: "5511996628267",
 
-  // Mensagem padrão enviada ao clicar nos botões.
+// Mensagem padrão enviada ao clicar nos botões.
   whatsappMessage: "Olá! Vi o catálogo da Ababi & Mimos e gostaria de saber mais."
 };
 
+// INICIALIZAÇÃO DA PÁGINA
+
 document.addEventListener("DOMContentLoaded", () => {
+// CONFIGURA TODOS OS BOTÕES DO WHATSAPP
   const whatsappLinks = document.querySelectorAll(".js-whatsapp");
 
   const whatsappUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
@@ -18,10 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     link.href = whatsappUrl;
   });
 
+// ATUALIZA O ANO DO RODAPÉ
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
-  // Menu mobile
+// MENU MOBILE
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav-links");
 
@@ -39,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Animações de entrada
+// ANIMAÇÕES DE ENTRADA
   const revealItems = document.querySelectorAll(".reveal");
 
   if ("IntersectionObserver" in window) {
@@ -59,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     revealItems.forEach((item) => item.classList.add("is-visible"));
   }
 
-  // Pequeno efeito no header ao rolar
+// SOMBRA DINÂMICA DO CABEÇALHO
   const header = document.querySelector(".header");
   const updateHeader = () => {
     if (!header) return;
