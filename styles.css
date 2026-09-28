@@ -210,7 +210,7 @@ button,input{font:inherit}
   background:radial-gradient(circle at 25% 25%,#f5e4da 0 13%,transparent 14%),linear-gradient(140deg,#ead3c6,#f8eee9);
 }
 .about-initial{
-  position:absolute;right:14%;bottom:4%;font:700 15rem/.8 "Playfair Display",serif;color:rgba(123,81,67,.1)
+  position:absolute;right:0%;bottom:-5%;font:700 15rem/.8 "Playfair Display",serif;color:rgba(123,81,67,.1)
 }
 .about-copy h2{font-size:clamp(2.5rem,4vw,4rem);margin:14px 0 22px}
 .about-copy p{color:var(--muted);max-width:650px;font-size:1.02rem}
