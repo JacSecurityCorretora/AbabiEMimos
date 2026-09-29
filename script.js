@@ -22,6 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
     link.href = whatsappUrl;
   });
 
+// SITE CATÁLOGO
+  const siteLinks = document.querySelectorAll(".js-site");
+
+  const siteUrl = "https://ababiemimos.com.br/catalogo.html";
+  siteLinks.forEach((link) => {
+    link.href = siteUrl;
+  });
+
 // ATUALIZA O ANO DO RODAPÉ
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
