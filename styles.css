@@ -42,7 +42,8 @@ a{color:inherit;
 
 button,input{font:inherit}
 
-.container{width:min(calc(100% - 40px),var(--container));
+.container{width:min(calc(100% - 40px),
+           var(--container));
            margin-inline:auto}
 
 /* TOPO E CABEÇALHO */
@@ -427,7 +428,7 @@ button,input{font:inherit}
             background:radial-gradient(circle at 25% 25%,#f5e4da 0 13%,transparent 14%),linear-gradient(140deg,#ead3c6,#f8eee9)}
 
 .about-initial{position:absolute;
-               right:0%;bottom:-5%;
+               right:0%;bottom:-2%;
                font:700 15rem/.8 "Playfair Display",serif;
                color:rgba(123,81,67,.1)}
 
